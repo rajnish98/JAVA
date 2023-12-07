@@ -1,11 +1,8 @@
 public class callbyValue {
-  public static void main(String args[]) {
-    // swaping - value exchange
 
-    int a = 5;
-    int b = 10;
+  public static void swap(int a, int b) {
 
-    // swap
+        // swap
 
     int temp = a;
     a = b;
@@ -14,6 +11,16 @@ public class callbyValue {
 
     System.out.println("a = " + a);
     System.out.println("b = " + b);
+    
+  }
+  public static void main(String args[]) {
+    // swaping - value exchange
+
+    int a = 5;
+    int b = 10;
+
+    swap(a, b);
+
   }
 }
 
