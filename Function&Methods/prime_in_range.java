@@ -23,10 +23,30 @@ public class prime_in_range {
     System.out.println();
   }
 
+  // binary to decml
+
+  public static void binToDec(int binNum) {
+    int myNum = binNum;
+
+    int pow  = 0;
+    int decNum = 0;
+
+    while(binNum > 0){
+      int lastDigit = binNum % 10;
+      decNum = decNum + (lastDigit * (int)Math.pow(2, pow));
+      pow++;
+      binNum = binNum / 10;
+
+    }    
+
+    System.out.println("decimal of " + myNum + " = " + decNum);
+  }
+
 
 
   public static void main(String args[]) {
-    primeInRange(20);
+    // primeInRange(20);
+    binToDec(101);
   }
 }
 
