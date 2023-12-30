@@ -23,7 +23,7 @@ public class diamond {
         System.out.print(" ");
       }
 
-      // star
+      // stars
       for (int j = 1; j <=(2*i)-1; j++) {
         System.out.print("*");
       }
